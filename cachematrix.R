@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Caches time-consuming computations for finding inverse by
+## taking advantage of R's scoping rules
 
-## Write a short comment describing this function
+## Creates "special" matrix containing list of following functions:
+## set(), get(), setmean(), getmean()
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -16,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## calculates inverse of matrix and returns it unless already
+## cached - then computation is skipped and simply returns value
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
