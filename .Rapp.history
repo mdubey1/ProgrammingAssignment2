@@ -1,0 +1,200 @@
+license()
+demo()
+intervals()
+con <- url("http://www.jhsph.edu", "r")
+x <- readLines(con)
+head(x)
+x
+search()
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+clear
+install.packages("KernSmooth")
+library(KernSmooth)
+x <- c(1, 2, 3, 4)
+y <- c(2, 3)
+x + y
+class(x + y)
+x <- c(1:4)
+y <- c(2:3)
+x + y
+class(x + y)
+cube <- function(x, n){}
+cube <- function(x, n) {#
+	x^3#
+}
+cube(3)
+x <- 1:10
+x
+y <- c(1:10)
+y
+if(x > 5) {x <- 0}
+if(x[x > 5]) {x <- 0}
+if([x > 5]) {x <- 0}
+ls()
+rm("DominosData")
+ls()
+rm("EagleBoysData")
+rm("i")
+rm("pizzaData")
+rm("xbars")
+rm("z")
+ls()
+getwd()
+ls()
+?complete.cases
+x <- matrix[2, 3]
+x
+x <- matrix[1:6, 2, 3]
+?matrix
+x <- matrix(1:6, 2, 3)
+x
+complete.cases(x)
+complete.cases(x.col)
+?matrix
+x <- matrix(1, 2, 3, na, 5, 6, nrow = 2, ncol = 3)
+?matrix
+x <- matrix(c(1, 2, 3, na, 5, 6), 2, 3)
+x <- matrix(c(1, 2, 3, NA, 5, 6), 2, 3)
+x
+complete.cases(x)
+x <- data.frame(id, nobs)
+x <- data.frame("id", "nobs")
+x
+?data.frame
+x[1] <- c(1, 2)
+x[[1]] <- c(1, 2)
+x[[1]] <- 1
+x
+x <- data.frame("id", "nobs")
+x[1] <- 1
+x
+x[[1]] <- 1
+x
+x[[1,2]] <- 1
+x
+x[[2]] <- 1
+x
+x[[1,2]] <- 1
+x
+x[[1,2]] <- 2
+x
+y <- data.frame("id", "nobs")
+y[[1, 1]] <- 1
+y[id[1]] <- 1
+y[1][1] <- 1
+y
+y[1][2] <- 2
+y[2][1] <- 2
+y
+y[1][2] <- 2
+y
+y <- data.frame(id = 1:332, nobs = 1:332)
+y
+y[1][2] <- 2
+y[id[1]]
+y[1[1]]
+y[1, "id" == 1]
+y
+y[1, "id"]
+y[220, "nobs"]
+x <- data.frame(id, nobs)
+x <- data.frame()
+x <- data.frame("id", "nobs")
+x
+x[1, "id"] = 2
+x
+x[1, "nobs"] = 2
+x
+x[1, nobs] = 2
+?rbind
+x <- data.frame("id", "nobs")
+rbind(x, c(1, 2))
+x
+x <- data.frame()
+rbind(x, c(1, 2))
+rbind(x, c(2, 4))
+x
+x <- data.frame()
+x <- rbind(x, c(2, 4))
+x
+x <- rbind(x, c(1, 2))
+x
+?!=
+x <- 0
+y <- 1
+if(x != 0) {5}
+if(y != 0) {5}
+ls()
+source("corr.R")
+x <- 2:7
+x
+x <- c(2:7)
+x
+x <- x[2:6]
+x
+library(datasets)
+data(iris)
+?iris
+iris
+clear
+mean(iris$Sepal.length)
+mean(iris[Sepal.length])
+mean(iris[[Sepal.length]])
+seplen <- iris$Sepal.length
+seplen
+seplen <- iris["Sepal.length"]
+seplen <- iris[, "Sepal.length"]
+seplen <- iris[,"Sepal.length"]
+seplen <- iris[,Sepal.length]
+seplen <- iris[,1]
+seplen
+mean(seplen)
+seplen <- iris[which(iris$Species == virginica)]
+seplen <- iris[which(iris$Species == virginica),]
+seplen <- iris[which(iris$Species == "virginica"),]
+seplen
+mean(seplen$Sepal.Length)
+rowMeans(iris[, 1:4])
+colMeans(iris[, 1:4])
+colMeans(iris[101:150, 1:4])
+colMeans(iris[, 1:4])
+apply(iris, 1, mean)
+apply(iris[, 1:4], 1, mean)
+apply(iris[, 1:4], 2, mean)
+library(datasets)
+data(mtcars)
+?mtcars
+mtcars
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+sapply(split(mtcars$hp, mtcars$cyl), mean)
+209.214-82.636
+ls()
+debug(ls)
+ls
+debug(ls)
+ls()
+2
+3
+n
+nn
+n
+source("cachematrix.R")
+ls
+dir
+dir()
+ls()
+mat <- makeCacheMatrix(matrix(c(1,0,5,2,1,6,3,4,0),3,3))
+mat
+mat$get()
+mat$getinverse()
+cacheSolve(mat)
+mat$get()
+mat$getinverse()
+source("cachematrix.R")
+mat <- makeCacheMatrix(matrix(c(1,0,5,2,1,6,3,4,0),3,3))
+mat$get()
+mat$getinverse()
+cacheSolve(mat)
+mat$get()
+mat$getinverse()
